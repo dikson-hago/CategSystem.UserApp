@@ -1,0 +1,15 @@
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\bin\Debug\net6.0\CategorisationSystem.ApplicationServices.deps.json
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\bin\Debug\net6.0\CategorisationSystem.ApplicationServices.dll
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\bin\Debug\net6.0\ref\CategorisationSystem.ApplicationServices.dll
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\bin\Debug\net6.0\CategorisationSystem.ApplicationServices.pdb
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\bin\Debug\net6.0\MlServer.Client.dll
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\bin\Debug\net6.0\MlServer.Client.pdb
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.AssemblyInfo.cs
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.csproj.CopyComplete
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.dll
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\ref\CategorisationSystem.ApplicationServices.dll
+C:\Users\User\Documents\учеба\CourseWork\CategorizationSystem\CategorisationSystem.ApplicationServices\obj\Debug\net6.0\CategorisationSystem.ApplicationServices.pdb

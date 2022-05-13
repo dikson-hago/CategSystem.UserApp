@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlControlsGallery", "XamlControlsGallery\XamlControlsGallery.csproj", "{EECBC48D-3DE6-42C2-9953-3C5EB88B9D48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlControlsGallery.NetCore", "XamlControlsGallery.NetCore\XamlControlsGallery.NetCore.csproj", "{BD6DA0AB-6411-4EE4-ABE1-24C5AC519365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MlServer.Client", "MlServer.Client\MlServer.Client.csproj", "{C262C4B6-B88D-44A7-A7BF-A13A3315CB6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CategorisationSystem.ApplicationServices", "CategorisationSystem.ApplicationServices\CategorisationSystem.ApplicationServices.csproj", "{BC1EE779-CECD-4C99-97D5-B7AE44C9A832}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EECBC48D-3DE6-42C2-9953-3C5EB88B9D48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECBC48D-3DE6-42C2-9953-3C5EB88B9D48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECBC48D-3DE6-42C2-9953-3C5EB88B9D48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECBC48D-3DE6-42C2-9953-3C5EB88B9D48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6DA0AB-6411-4EE4-ABE1-24C5AC519365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6DA0AB-6411-4EE4-ABE1-24C5AC519365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6DA0AB-6411-4EE4-ABE1-24C5AC519365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6DA0AB-6411-4EE4-ABE1-24C5AC519365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C262C4B6-B88D-44A7-A7BF-A13A3315CB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C262C4B6-B88D-44A7-A7BF-A13A3315CB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C262C4B6-B88D-44A7-A7BF-A13A3315CB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C262C4B6-B88D-44A7-A7BF-A13A3315CB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1EE779-CECD-4C99-97D5-B7AE44C9A832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1EE779-CECD-4C99-97D5-B7AE44C9A832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1EE779-CECD-4C99-97D5-B7AE44C9A832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1EE779-CECD-4C99-97D5-B7AE44C9A832}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

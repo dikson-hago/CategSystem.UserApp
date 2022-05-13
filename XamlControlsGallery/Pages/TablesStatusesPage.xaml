@@ -1,0 +1,60 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:XamlControlsGallery.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:DataType="viewModels:TablesStatusesViewModel"
+             x:Class="XamlControlsGallery.Pages.TablesStatusesPage">
+  <StackPanel Margin="{StaticResource PageMargin}" Background="Transparent"
+              Orientation="Horizontal"
+              Spacing="40">
+    <StackPanel.Styles>
+      <Style Selector="TextBlock.header">
+        <Setter Property="Margin" Value="0 30 0 20" />
+      </Style>
+    </StackPanel.Styles>
+      
+    <StackPanel Width="200">
+      <TextBlock
+        Text = "Tables Statuses"
+        Margin="0 0 0 20"
+        Classes="header"
+      />
+      <StackPanel>
+        <Border 
+          BorderBrush="{DynamicResource SystemControlHighlightBaseLowBrush}"
+          BorderThickness="1"
+          Padding="0">
+          <ScrollViewer
+            HorizontalScrollBarVisibility="Visible"
+            Height="400"
+            Width="200">
+            <ItemsRepeater
+              Items="{CompiledBinding TablesStatuses}">
+              <ItemsRepeater.Layout>
+                <StackLayout Spacing="0" Orientation="Vertical"/>
+              </ItemsRepeater.Layout>
+              <ItemsRepeater.ItemTemplate>
+                <DataTemplate
+                  x:DataType="viewModels:TableStatus">
+                  <TextBlock
+                    Text="{CompiledBinding Result}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"/>
+                </DataTemplate>
+              </ItemsRepeater.ItemTemplate>
+            </ItemsRepeater>
+          </ScrollViewer>
+        </Border>
+      </StackPanel>
+      
+      <Button
+        Margin="0 20 0 0"
+        Content="Update"
+        Click="UpdadeTablesStatusesButtonClick"
+      />
+    </StackPanel>
+      
+  </StackPanel>
+</UserControl>

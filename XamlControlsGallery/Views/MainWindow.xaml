@@ -1,0 +1,75 @@
+﻿<controls:FluentWindow xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:XamlControlsGallery.ViewModels;assembly=XamlControlsGallery"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="850" d:DesignHeight="950" Height="650" Width="850"
+        xmlns:pages="clr-namespace:XamlControlsGallery.Pages;assembly=XamlControlsGallery"
+        xmlns:local="clr-namespace:XamlControlsGallery.Views"
+        xmlns:controls="clr-namespace:Avalonia.Controls"
+        x:Class="XamlControlsGallery.Views.MainWindow"
+        Icon="{x:Null}"
+        x:Name="MainWindow"
+        WindowStartupLocation="CenterScreen"
+        Background="{x:Null}"
+        Title="XamlControlsGallery">
+  <controls:FluentWindow.Styles>
+    <Style Selector="TitleBar:fullscreen">
+      <Setter Property="Background" Value="#7f000000" />
+    </Style>
+  </controls:FluentWindow.Styles>
+
+  <Design.DataContext>
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+
+  <NativeMenu.Menu>
+    <NativeMenu>
+      <NativeMenuItem Header="File">
+        <NativeMenuItem.Menu>
+          <NativeMenu>
+            <NativeMenuItem Icon="/Assets/test_icon.ico" Header="Open" Gesture="Ctrl+O"/>
+            <NativeMenuItemSeperator/>
+            <NativeMenuItem Icon="/Assets/github_icon.png" Header="Recent">
+              <NativeMenuItem.Menu>
+                <NativeMenu/>
+              </NativeMenuItem.Menu>
+            </NativeMenuItem>
+            <NativeMenuItemSeperator/>
+
+          </NativeMenu>
+        </NativeMenuItem.Menu>
+      </NativeMenuItem>
+      <NativeMenuItem Header="Edit">
+        <NativeMenuItem.Menu>
+          <NativeMenu>
+            <NativeMenuItem Header="Copy"/>
+            <NativeMenuItem Header="Paste"/>
+          </NativeMenu>
+        </NativeMenuItem.Menu>
+      </NativeMenuItem>
+      <NativeMenuItem Header="Options">
+        <NativeMenuItem.Menu>
+          <NativeMenu>
+            <NativeMenuItem Header="Check Me (None)"
+                             Command="{Binding ToggleMenuItemCheckedCommand}"
+                             ToggleType="None"
+                             IsChecked="{Binding IsMenuItemChecked}"  />
+            <NativeMenuItem Header="Check Me (CheckBox)"
+                            Command="{Binding ToggleMenuItemCheckedCommand}"
+                            ToggleType="CheckBox"
+                            IsChecked="{Binding IsMenuItemChecked}"  />
+            <NativeMenuItem Header="Check Me (Radio)"
+                            Command="{Binding ToggleMenuItemCheckedCommand}"
+                            ToggleType="Radio"
+                            IsChecked="{Binding IsMenuItemChecked}"  />
+          </NativeMenu>
+        </NativeMenuItem.Menu>
+      </NativeMenuItem>
+    </NativeMenu>
+  </NativeMenu.Menu>
+
+  <Panel Margin="{Binding #MainWindow.OffScreenMargin}">
+       <local:MainView />
+  </Panel>
+</controls:FluentWindow>

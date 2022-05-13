@@ -1,0 +1,121 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:XamlControlsGallery.ViewModels"
+             xmlns:models="clr-namespace:XamlControlsGallery.Models"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:DataType="viewModels:PredictCategoryViewModel"
+             x:Class="XamlControlsGallery.Pages.PredictCategoryPage">
+  <StackPanel Margin="{StaticResource PageMargin}" Background="Transparent"
+              Orientation="Horizontal"
+              Spacing="40">
+    <StackPanel.Styles>
+      <Style Selector="TextBlock.header">
+        <Setter Property="Margin" Value="0 30 0 20" />
+      </Style>
+    </StackPanel.Styles>
+      
+    <StackPanel Width="265">
+      <TextBlock
+        Text = "Table name"
+        Margin="0 0 0 20 "
+        Classes="header"
+      />
+      
+      <ComboBox Name="Select">
+        <ComboBox.ItemTemplate>
+          <DataTemplate>
+            <TextBlock 
+              Text="{Binding TableNameWithConnection}" />
+          </DataTemplate>
+        </ComboBox.ItemTemplate>
+      </ComboBox>
+      
+      <Button
+        Margin="0 20 0 20"
+        Content="Update tables connection"
+        Click="UpdateTablesButtonClick"
+      />
+      
+      <TextBlock
+        Text = "File Path"
+        Margin="0 20 0 20"
+        Classes="header"
+      />
+      <TextBox
+        Watermark="File path"
+        Text = "{CompiledBinding FilePath}"
+      />
+      
+      <TextBlock
+        Text = "Target Folder Path"
+        Margin="0 20 0 20"
+        Classes="header"
+      />
+      <TextBox
+        Watermark="Path"
+        Text = "{CompiledBinding TargetFolder}"
+      />
+      
+      <Button
+        Margin="0 20 0 0"
+        Content="PredictCategory"
+        Click="PredictCategoryButtonClick"
+      />
+      
+      <TextBlock
+        Text = "Status info"
+        Margin="0 40 0 20"
+        Classes="header"
+      />
+      <StackPanel>
+        <Border
+          BorderBrush="{DynamicResource SystemControlHighlightBaseLowBrush}"
+          BorderThickness="1"
+          Padding="0">
+          <ScrollViewer
+            HorizontalScrollBarVisibility="Visible"
+            Height="75"
+            Width="265">
+            <ItemsRepeater
+              Items="{CompiledBinding Status.StatusInfos}">
+              <ItemsRepeater.Layout>
+                <StackLayout Spacing="0" Orientation="Vertical"/>
+              </ItemsRepeater.Layout>
+              <ItemsRepeater.ItemTemplate>
+                <DataTemplate
+                  x:DataType="models:StatusInfo">
+                  <TextBlock
+                    Text="{CompiledBinding Message}"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"/>
+                </DataTemplate>
+              </ItemsRepeater.ItemTemplate>
+            </ItemsRepeater>
+          </ScrollViewer>
+        </Border>
+      </StackPanel>
+      
+    </StackPanel>
+    
+    <StackPanel Width="200">
+      <TextBlock
+        Text = "For download template"
+        Margin="0 0 0 20"
+        Classes="header"
+      />
+      <TextBox
+        Watermark="Folder path"
+        Margin="0 0 0 0 "
+        Text = "{CompiledBinding TargetTemplateFolder}"
+      />
+      <Button
+        Margin="0 20 0 0"
+        Content="Download Template"
+        Click="DownloadTemplateButtonClick"
+      />
+    </StackPanel>
+    
+  </StackPanel>
+</UserControl>
