@@ -69,7 +69,7 @@
             HorizontalScrollBarVisibility="Visible"
             VerticalScrollBarVisibility="Visible"
             Height="150"
-            Width="500">
+            Width="265">
             <ItemsRepeater
               Items="{CompiledBinding Status.StatusInfos}">
               <ItemsRepeater.Layout>

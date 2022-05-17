@@ -91,6 +91,13 @@ public class ServersStorage
         return _connectionsInfo.TableInfos;
     }
 
+    public async Task<List<string>> GetAllConnections()
+    {
+        await UpdateAllConnections();
+        await _serversBackUpStorage.Rewrite(_connectionsInfo.GetAllConnections());
+        return _connectionsInfo.GetAllConnections();
+    }
+
     public List<string> GetTableColumns(string tableName, string serverUrl)
     {
         var tableInfo = _connectionsInfo.TableInfos

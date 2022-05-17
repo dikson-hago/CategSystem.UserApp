@@ -29,8 +29,12 @@
         <pages:AddServerPage />
       </TabItem>
       
+      <!-- <TabItem Header="Add Table"> -->
+      <!--   <pages:AddTablePage /> -->
+      <!-- </TabItem> -->
+      
       <TabItem Header="Add Table">
-        <pages:AddTablePage />
+        <pages:AddTablePage2 />
       </TabItem>
       
       <TabItem Header="Add Objects">

@@ -46,10 +46,12 @@ namespace XamlControlsGallery.Pages
             {
                 try
                 {
+                    
                     var table = GetChoosenTable();
                     viewModel.TableName = table.TableName;
                     viewModel.ServerUrl = table.ServerUrl;
 
+                    ValidateNotNull(viewModel);
                     var predictCategoryContext =
                         new PredictCategoriesContext(viewModel.ServerUrl,
                             viewModel.AddStatus);
@@ -61,6 +63,12 @@ namespace XamlControlsGallery.Pages
                     viewModel.AddStatus(e.Message);
                 }
             }
+        }
+
+        private void ValidateNotNullForDownload(PredictCategoryViewModel viewModel)
+        {
+            CheckNotNull(viewModel.TableName, "Table");
+            CheckNotNull(viewModel.TargetFolder, "Target template folder");
         }
         
         public void DownloadTemplateButtonClick(object sender, RoutedEventArgs args)
@@ -75,10 +83,14 @@ namespace XamlControlsGallery.Pages
                     viewModel.TableName = table.TableName;
                     viewModel.ServerUrl = table.ServerUrl;
 
+                    ValidateNotNullForDownload(viewModel);
+                    viewModel.AddStatus("Please, wait...");
                     var template =
                         new TemplateForPredict(viewModel.ServerUrl, viewModel.AddStatus);
 
+                    
                     template.CreateTemplate(viewModel.TableName, viewModel.TargetTemplateFolder);
+                    
                     
                     viewModel.AddStatus("Template downloaded");
                 }

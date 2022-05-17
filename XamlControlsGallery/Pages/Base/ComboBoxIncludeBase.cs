@@ -38,7 +38,7 @@ where TViewModel : ViewModelBase
     {
         var context = new UpdateTablesContext();
         var tableNames = await context.GetAllTables();
-        viewModel.AddStatus("Updated\n");
+        viewModel.AddStatus("Tables updated\n");
         UpdateComboBox(tableNames);
     }
 

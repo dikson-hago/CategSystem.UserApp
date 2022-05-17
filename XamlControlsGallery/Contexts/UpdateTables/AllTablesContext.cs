@@ -24,4 +24,9 @@ public class UpdateTablesContext
             TableName = table.TableName
         }).ToList();
     }
+
+    public async Task<List<string>> GetAllConnections()
+    {
+        return await _serversStorage.GetAllConnections();
+    }
 }

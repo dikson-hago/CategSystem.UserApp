@@ -122,7 +122,7 @@
           <ScrollViewer
             HorizontalScrollBarVisibility="Visible"
             Height="300"
-            Width="500">
+            Width="265">
             <ItemsRepeater
               Items="{CompiledBinding Status.StatusInfos}">
               <ItemsRepeater.Layout>

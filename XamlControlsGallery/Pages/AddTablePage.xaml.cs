@@ -36,11 +36,12 @@ namespace XamlControlsGallery.Pages
                 {
                     var tableContext = new AddTableContext(
                         viewModel.ServerUrl, viewModel.AddStatus);
+                    
                     tableContext.AddTableAsync(viewModel);
                 }
                 catch (Exception e)
                 {
-                    
+                    viewModel.AddStatus(e.Message);
                 }
             }
         }
