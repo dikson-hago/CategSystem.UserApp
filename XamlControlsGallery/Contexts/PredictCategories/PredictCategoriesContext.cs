@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
-using CategorixationSystem.ApplicationServices.Excel.Models;
-using CategorixationSystem.ApplicationServices.ExcelCreator;
-using ClosedXML.Excel;
-using XamlControlsGallery.Connections;
+using CategorisationSystem.ApplicationServices.Storages;
 using XamlControlsGallery.Mappers;
 using XamlControlsGallery.ViewModels;
 

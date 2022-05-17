@@ -1,7 +1,7 @@
 ﻿using MlServer.Client;
 using MlServer.Client.Models;
 
-namespace XamlControlsGallery.Connections;
+namespace CategorisationSystem.ApplicationServices.Storages;
 
 public class UpdateConnectionsContext
 {

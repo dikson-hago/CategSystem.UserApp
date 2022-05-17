@@ -1,4 +1,8 @@
-﻿namespace CategorixationSystem.ApplicationServices.Txt;
+﻿using System.Collections.Generic;
+using System.IO;
+using System.Threading.Tasks;
+
+namespace CategorixationSystem.ApplicationServices.Txt;
 
 public class TxtFilesContext
 {

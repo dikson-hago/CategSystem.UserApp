@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using CategorisationSystem.ApplicationServices;
+using CategorisationSystem.ApplicationServices.Storages;
 using CategorixationSystem.ApplicationServices.Excel.Models;
-using MlServer.Client.Models;
-using XamlControlsGallery.Connections;
 
 namespace XamlControlsGallery.Contexts.PredictCategories;
 

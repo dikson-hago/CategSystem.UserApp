@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using XamlControlsGallery.Connections;
+using CategorisationSystem.ApplicationServices.Storages;
 using XamlControlsGallery.Models;
 
 namespace XamlControlsGallery.Contexts.UpdateTables;

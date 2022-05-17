@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using XamlControlsGallery.Connections;
+using CategorisationSystem.ApplicationServices.Storages;
 using XamlControlsGallery.Mappers;
 
 namespace XamlControlsGallery.Contexts.DowloadTable;

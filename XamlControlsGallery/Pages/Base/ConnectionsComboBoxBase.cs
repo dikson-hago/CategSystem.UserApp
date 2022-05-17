@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using XamlControlsGallery.Contexts.UpdateTables;
-using XamlControlsGallery.Models;
 using XamlControlsGallery.ViewModels;
 
 namespace XamlControlsGallery.Pages;

@@ -1,6 +1,5 @@
 ﻿using System;
-using CategorixationSystem.ApplicationServices.Excel.Models;
-using XamlControlsGallery.Connections;
+using CategorisationSystem.ApplicationServices.Storages;
 
 namespace XamlControlsGallery.Contexts.TemplateForAdd;
 

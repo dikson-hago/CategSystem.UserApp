@@ -1,7 +1,6 @@
 ﻿using Grpc.Net.Client;
 using MlServer.Client.Handlers.Base;
 using MlServer.Client.Mapper;
-using MlServer.Client.Models;
 using MlServer.Proto;
 
 using Contract = MlServer.Client.Models;

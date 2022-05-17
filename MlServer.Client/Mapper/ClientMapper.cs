@@ -1,4 +1,4 @@
-﻿using MlServer.Client.Models;
+﻿using System.Collections.Generic;
 using ProtoModels = MlServer.Proto;
 
 namespace MlServer.Client.Mapper;

@@ -1,4 +1,4 @@
-﻿namespace XamlControlsGallery.Connections;
+﻿namespace CategorisationSystem.ApplicationServices.Storages;
 
 public class ConnectionsInfo
 {

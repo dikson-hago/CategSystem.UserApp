@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using XamlControlsGallery.Connections;
-using XamlControlsGallery.ViewModels;
+using CategorisationSystem.ApplicationServices.Storages;
 
 namespace XamlControlsGallery.Contexts.AddServer;
 

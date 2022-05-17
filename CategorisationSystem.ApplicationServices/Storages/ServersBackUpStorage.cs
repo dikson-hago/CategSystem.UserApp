@@ -1,6 +1,6 @@
 ﻿using CategorixationSystem.ApplicationServices.Txt;
 
-namespace XamlControlsGallery.Connections;
+namespace CategorisationSystem.ApplicationServices.Storages;
 
 class TxtConnectionsFile
 {

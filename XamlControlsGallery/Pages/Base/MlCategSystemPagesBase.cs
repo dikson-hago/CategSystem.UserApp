@@ -1,7 +1,6 @@
 ﻿using System;
 using Avalonia.Controls;
 using JetBrains.Annotations;
-using MlServer.Client;
 using XamlControlsGallery.ViewModels;
 
 namespace XamlControlsGallery.Pages;
