@@ -65,10 +65,10 @@ namespace XamlControlsGallery.Pages
             }
         }
 
-        private void ValidateNotNullForDownload(PredictCategoryViewModel viewModel)
+        private void ValidateNotNullForDownloadTemplate(PredictCategoryViewModel viewModel)
         {
             CheckNotNull(viewModel.TableName, "Table");
-            CheckNotNull(viewModel.TargetFolder, "Target template folder");
+            CheckNotNull(viewModel.TargetTemplateFolder, "Target template folder");
         }
         
         public void DownloadTemplateButtonClick(object sender, RoutedEventArgs args)
@@ -83,7 +83,7 @@ namespace XamlControlsGallery.Pages
                     viewModel.TableName = table.TableName;
                     viewModel.ServerUrl = table.ServerUrl;
 
-                    ValidateNotNullForDownload(viewModel);
+                    ValidateNotNullForDownloadTemplate(viewModel);
                     viewModel.AddStatus("Please, wait...");
                     var template =
                         new TemplateForPredict(viewModel.ServerUrl, viewModel.AddStatus);
